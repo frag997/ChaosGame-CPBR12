@@ -1,9 +1,3 @@
-let ax, ay;
-let bx, by;
-let cx, cy;
-
-let x, y;
-
 let counter = 0;
 
 class Point{
