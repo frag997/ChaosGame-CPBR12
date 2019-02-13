@@ -7,13 +7,13 @@
 
 let points;
 let current;
-let percent = 0.5;
+let percent = 0.55;
 let previous;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   points = [];
-  const n = 6;
+  const n = 5;
 
   for (let i = 0; i < n; i++) {
     // let v = createVector(random(width), random(height));
@@ -30,7 +30,7 @@ function setup() {
 function reset() {
   current = createVector(random(width), random(height));
   background(0);
-  stroke(0, 255, 0);
+  stroke(0, 0, 0);
   strokeWeight(8);
   for (let p of points) {
     point(p.x, p.y);
@@ -45,9 +45,9 @@ function draw() {
     reset();
   }
 
-  for (let i = 0; i < 30000; i++) {
+  for (let i = 0; i < 5000; i++) {
     strokeWeight(1);
-    stroke(0,255,50);
+    stroke(0,0  ,50);
     let next = random(points);
     if (next !== previous) {
       current.x = lerp(current.x, next.x, percent);
