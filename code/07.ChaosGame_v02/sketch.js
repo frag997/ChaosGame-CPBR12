@@ -41,7 +41,7 @@ function reset() {
 
 function draw() {
 
-  if (frameCount % 100 == 0) {
+  if (frameCount % 900 == 0) {
     reset();
   }
 
